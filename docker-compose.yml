@@ -16,10 +16,10 @@ services:
             MSUSER: root
             MSPASSWORD: password
             MSDATABASE: logindb
-            SERVERPORT: 80
+            SERVERPORT: 8888
             WAIT_HOSTS: mysql-server:3306
             WAIT_HOSTS_TIMEOUT: 90
         ports:
-            - "80:80"
+            - "8888:8888"
         depends_on: 
             - mysql-server
